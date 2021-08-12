@@ -1,7 +1,4 @@
 # dependencies
 /node_modules
-dist/
-src/
-/package-lock.json
 /.pnp
 .pnp.js
