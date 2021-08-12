@@ -1,0 +1,12 @@
+$margin: 20px;
+hr {
+    margin: $margin;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/images/img.jpg');
+}
