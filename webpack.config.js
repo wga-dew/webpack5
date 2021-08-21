@@ -18,6 +18,7 @@ const PATHS = {
 };
 
 PATHS.imgFolder = PATHS.assets + 'images';
+PATHS.fontFolder = PATHS.assets + 'fonts';
 
 module.exports = {
     entry: './src/index.js',
@@ -107,7 +108,14 @@ module.exports = {
                 generator: {
                     filename: `${PATHS.imgFolder}/[name][ext]`
                 }
-            }
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: `${PATHS.fontFolder}/[name][ext]`
+                }
+            },
         ]
     },
     optimization: {

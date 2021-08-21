@@ -3,10 +3,16 @@ hr {
     margin: $margin;
 }
 
+@font-face {
+    font-family: 'FontMain';
+    src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url('../assets/images/img.jpg');
+    font-family: FontMain;
 }
